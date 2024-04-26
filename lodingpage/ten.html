@@ -1,0 +1,142 @@
+<html>
+<head>
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color:#006ca5;
+}
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+.demo { 
+            width:500px; 
+            height:10px; 
+            background:#006ca5; 
+            position:absolute;
+            top:50%; 
+            left:40%;
+			z-index:+1;
+            transform: translate(-65%, -65%);
+
+        } 
+        .demo::before { 
+            content: ""; 
+            position: absolute; 
+            top: 0; 
+            left: 15;
+            width:100%; 
+            height:100%; 
+            background:#006ca5; 
+            animation: animate 5s linear infinite;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+h1 span {
+  font-size: 8rem;
+  font-family:'Bad Script', cursive;
+  color:#111;
+  animation: glowing 100s linear infinite;
+}
+
+@keyframes glowing {
+  0%, 100% {
+    color:#FFFF00;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff,
+                 0 0 40px #00b3ff,
+                 0 0 80px #00b3ff,
+                 0 0 120px #00b3ff,
+                 0 0 200px #00b3ff,
+                 0 0 300px #00b3ff,
+                 0 0 400px #00b3ff;
+  } 5%, 95% {
+    color: #006ca5;
+    text-shadow: none;
+    filter: blur(0px);
+  }
+}
+       @keyframes animate { 
+            0% { 
+                left: 0; 
+            }  
+            30% { 
+                left: 100%; 
+            }  
+            100% { 
+                left: 0; 
+            } 
+        }
+
+
+h1 span:nth-child(1){
+  animation-delay: 0s;
+}
+
+h1 span:nth-child(2){
+  animation-delay: .1s;
+}
+
+h1 span:nth-child(3){
+  animation-delay: .2s;
+}
+
+h1 span:nth-child(4){
+  animation-delay: .4s;
+}
+
+h1 span:nth-child(5){
+  animation-delay: .6s;
+}
+
+h1 span:nth-child(6){
+  animation-delay: .8s;
+}
+
+h1 span:nth-child(7){
+  animation-delay: 1s;
+}
+
+h1 span:nth-child(8){
+  animation-delay: 1.75s;
+}
+  </style>
+</head>
+<body style="background-image:url('../assets/img/back4.jpg');">
+<div class="demo">
+</div>
+  <h1 class="sliden" >
+    <span>X</span>
+    <span>O</span>
+    <span>X</span>
+    <span>O</span>
+    <span>X</span>
+    <span>O</span>
+    <span>X</span>
+    <span>O</span>
+  </h1>
+   <script>
+    setTimeout(function() {
+      window.location.href = "../pages/10x10.html";
+    }, 3500); // Redirect after 5 seconds (50000 milliseconds)
+  </script>
+</body>
+</html>

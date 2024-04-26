@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>3d carousel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+     integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style type="text/css">
+       
+        h1{
+         color: aliceblue;
+         font-weight: bold;
+         margin-top: 10px;
+        }
+        body{
+         align-items: center;
+         justify-content: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+        }
+       
+   .carousel,.carousel-item{
+      height: 1000px;
+      width: 80%; 
+      perspective:100em;
+
+   }
+   .carousel{
+      margin-top: -300px;
+   }
+   
+element.style {
+}
+.carousel .indicators .indicator-item {
+   margin: 23px 11px;
+}
+   #s{
+      width: 50%;
+      height: 50%;
+   }
+   h2,#head{
+      margin-left: 90%;
+   }
+   ul:not(.browser-default){
+      padding-left:300px ;
+   }
+   
+button{
+height: 40px;
+width: 100px;
+border-radius:8px;
+background-color:#F76541;
+cursor: pointer;
+margin-left: 46%;
+
+}
+button:hover{
+   background-color: #9669ff;
+}
+
+        
+        </style>
+</head>
+<body style="background-image:url('../assets/img/back4.jpg');">
+   <div>
+  
+</div>
+   <center><h1> Choice Your Grid</h1></center>
+
+    <div class="carousel" >
+      
+        <a class="carousel-item" href="../lodingpage/trree.html">   <div>
+           <img src="../assets/img/3x3.png" alt="img1"></img></div>
+         </a>  
+         
+         <a class="carousel-item" href="../lodingpage/four.html"> <div id="s"> 
+            <img src="../assets/img/4x4.png" alt="img1"></div>
+         </a>  
+         <a class="carousel-item" href="../lodingpage/five.html">  <div id="s">
+            <img src="../assets/img/5x5.png" alt="img1"></div>
+         </a> 
+         <a class="carousel-item" href="../lodingpage/six.html">  <div id="s">
+            <img src="../assets/img/6x6.png" alt="img1"></div>
+         </a>  
+         <a class="carousel-item" href="../lodingpage/seven.html">  <div id="s">
+            <img src="../assets/img/7x7.png" alt="img1"></div>
+          </a> 
+          <a class="carousel-item" href="../lodingpage/eight.html">  <div id="s"> 
+            <img src="../assets/img/8x8.png" alt="img1"></div>
+          </a> 
+          <a class="carousel-item" href="../lodingpage/nine.html">  <div id="s">
+            <img src="../assets/img/9x9.png" alt="img1"></div>
+          </a> 
+          <a class="carousel-item" href="../lodingpage/ten.html"> <div id="s">
+            <img src="../assets/img/10x10.png" alt="img1"></div>
+          </a>   
+    </div>
+    <a href="../lodingpage/index.html"><button>back</button></a>
+    </div></div>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" 
+     integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                indicators: true
+            });
+        });
+
+     </script>
+</body>
+</html>
